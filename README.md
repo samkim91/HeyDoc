@@ -40,3 +40,6 @@ It took about 5 weeks to the completion.
 2. 개인정보 수정 (Editting my personal infomation)
 - 기존 데이터를 firebase에서 가져오고 수정 저장 (Loading my info from Firebase and Editting them)
 - Firebase(Realtime Database, Storage), Glide, RecyclerView
+
+작품영상(project video) : https://epdev.tistory.com/6
+
