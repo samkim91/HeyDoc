@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consult_item2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sendingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble2"
+        android:text="보낸 내용"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:maxWidth="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/sendingtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보낸 시간"
+        android:textSize="10sp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintRight_toLeftOf="@id/sendingtext"
+        app:layout_constraintBottom_toBottomOf="@id/sendingtext"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

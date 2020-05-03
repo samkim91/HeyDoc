@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/personimg"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/personname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사람이름"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/personimg"
+        app:layout_constraintLeft_toRightOf="@id/personimg"
+        android:layout_marginLeft="20sp"
+        />
+
+    <TextView
+        android:id="@+id/showmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보낸내용"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/personimg"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/personname1"
+        />
+
+    <TextView
+        android:id="@+id/lastmsgtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마지막시간"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/personname1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

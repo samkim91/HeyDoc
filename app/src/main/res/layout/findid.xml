@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <TextView-->
+<!--        android:id="@+id/signview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#ff2E9AFE"-->
+<!--        android:text="@string/findIdTab"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="30sp" />-->
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/userName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/typeName_findid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/birthday"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/find_date_findid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+        <Button
+            android:id="@+id/find_date_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/calender"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/phoneNum"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/typePhoneNum_findid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:hint="- 빼고 입력하세요."
+        android:maxLength="11"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/confirm_findid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#ff2E9AFE"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+        />
+
+
+</LinearLayout>

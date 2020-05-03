@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:stretchColumns="0,1"
+    >
+
+<!--    안씀!!!!!!!!!!!!               -->
+
+<!--    <TextView-->
+<!--        android:id="@+id/selhospital"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#ff2E9AFE"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="@string/selhospital"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        />-->
+
+    <TableRow
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/pul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pul" />
+
+        <Button
+            android:id="@+id/gi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gi" />
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/car" />
+
+        <Button
+            android:id="@+id/os"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/os" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/ns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ns" />
+
+        <Button
+            android:id="@+id/gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gs" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/obgy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/obgy" />
+
+        <Button
+            android:id="@+id/ped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ped" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/der"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/der" />
+
+        <Button
+            android:id="@+id/uro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uro" />
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eye" />
+
+        <Button
+            android:id="@+id/ent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ent" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/psy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/psy" />
+
+        <Button
+            android:id="@+id/em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/em" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/reh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reh" />
+
+        <Button
+            android:id="@+id/den"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/den" />
+
+    </TableRow>
+
+</TableLayout>

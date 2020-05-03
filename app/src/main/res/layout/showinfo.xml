@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Showinfo_activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/mypicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userId"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/typeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_span="3"
+            android:textColor="@drawable/setdisabled_color"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userName"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/typeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="20sp"
+            android:maxLength="20"
+            android:layout_span="3"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/gender_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="20sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/gendergroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/male_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="남자"
+                android:textColor="@drawable/setdisabled_color"
+                />
+
+            <RadioButton
+                android:id="@+id/female_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"
+                android:textColor="@drawable/setdisabled_color"
+                />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/bloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bloodtype"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/showbloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phoneNum"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/typePhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="- 빼고 입력하세요."
+            android:maxLength="11"
+            android:layout_span="3"
+            android:textColor="@drawable/setdisabled_color"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/date_showinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_span="2"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+        <Button
+            android:id="@+id/find_date_showinfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/calender"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            style="?android:attr/borderlessButtonStyle"
+            />
+<!--        <EditText-->
+<!--            android:id="@+id/month"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="4"-->
+<!--            android:inputType="number"-->
+<!--            android:text="" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/day"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="5"-->
+<!--            android:inputType="number"-->
+<!--            android:text="" />-->
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/typeemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_span="3"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과거 병력"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/typeweakness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/sendsostotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS 수신자"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/sendsosto"
+            android:hint="SOS 받는 사람을 추가하세요."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="@drawable/setdisabled_color"
+            />
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수 정"
+            android:textSize="20sp"
+            android:background="#BDBDBD"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+
+            />
+    </TableRow>
+
+</TableLayout>

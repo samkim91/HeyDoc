@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project1.heydoc">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--    <uses-feature android:name="android.hardware.camera2" android:required="true"/> 나중에 출시할 때 필요한 제약-->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.project1.heydoc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCeauwAv0_fXl5S7fX-_653QpzrqwW-b3E"
+            />
+
+        <service android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+
+
+        </service>
+
+
+
+        <activity android:name=".Consult.ConsultList_activity"
+            android:label="대화목록"
+            ></activity>
+        <activity android:name=".Consult.ConsultMember_activity"
+            android:label="의사목록"/>
+        <activity android:name=".Record.Record_detail_activity" />
+        <activity android:name=".Showinfo_activity" />
+
+
+        <activity
+            android:name=".Record.Typerecord_activity"
+            android:label="@string/typerecord" />
+        <activity
+            android:name=".Login.Agreepolicy_activity"
+            android:label="@string/sign" />
+        <activity
+            android:name=".Login.Sign_activity"
+            android:label="@string/sign" />
+        <activity
+            android:name=".Login.Findpw_activity"
+            android:label="@string/findPwTab" />
+        <activity
+            android:name=".Login.Findid_activity"
+            android:label="@string/findIdTab" />
+        <activity
+            android:name=".Findlocation_activity"
+            android:label="@string/findlocation" />
+        <activity
+            android:name=".Record.Record_activity"
+            android:label="@string/record" />
+        <activity
+            android:name=".Consult.Consult_activity"
+            android:label="의료상담" />
+
+        <activity android:name=".SendSOS.SendSOSto_activicy"
+            android:label="받는사람 목록"/>
+
+        <!-- <activity -->
+        <!-- android:name=".Selhospital_activity" -->
+        <!-- android:label="@string/selhospital"></activity> -->
+        <activity
+            android:name=".Login.Loading_activity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".Login.Login_activity"
+            android:launchMode="singleTask"
+                >
+
+        </activity>
+        <activity android:name=".Main_activity" />
+
+    </application>
+
+</manifest>

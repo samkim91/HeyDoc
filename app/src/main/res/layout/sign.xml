@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <TextView-->
+<!--                android:id="@+id/signview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/sign"-->
+<!--                android:background="#ff2E9AFE"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="30sp" />-->
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#2E9AFE"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/mypicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/userId"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/checkIdFine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* 5~20자리의 영문/숫자로 설정하세요."
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/typeId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:ems="13"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"/>
+
+                <Button
+                    android:id="@+id/checkId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="중복확인"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/userPw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/userPw"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/checkPw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* 8~20자리 의 영문/숫자/특수기호로 설정하세요."
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/typePw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:maxLength="20"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/conUserPw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/conUserPw"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/matchpw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* 비밀번호가 일치하지 않습니다."
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/holo_red_light"
+                />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/retypePw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:maxLength="20"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/userName"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/typeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:maxLength="17"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/gender"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/selgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="3"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:text="남자"/>
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:text="여자"/>
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/bloodtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/bloodtype"
+                    android:textSize="20sp"
+                    />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/showbloodtype"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="50dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:ems="5"-->
+<!--                    android:enabled="false"-->
+<!--                    />-->
+
+                <Spinner
+                    android:id="@+id/selbloodtype"
+                    android:entries="@array/혈액형"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/phoneNum"
+                android:textSize="20sp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/typePhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:hint=" - 빼고 입력하세요"
+                android:inputType="number"
+                android:maxLength="11"
+                />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/birthday"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/showdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="@drawable/setdisabled_color"
+                    />
+
+                <Button
+                    android:id="@+id/setdate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/calender"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/month"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:ems="10"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="2"-->
+<!--                    />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/day"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:ems="10"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="2"-->
+<!--                    />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/email"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/checkmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* 유효한 이메일을 사용해주세요."
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/at" />
+
+                <EditText
+                    android:id="@+id/domain"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/weakness_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="기타 (과거 병력)"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/pastweakness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/signcncl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:text="취소" />
+
+                <Button
+                    android:id="@+id/signClk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ff2E9AFE"
+                    android:layout_margin="10dp"
+                    android:text="@string/signClk"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

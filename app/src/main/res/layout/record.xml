@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <TextView-->
+<!--        android:id="@+id/record"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/record"-->
+<!--        android:background="#ff2E9AFE"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+
+<!--        />-->
+
+    <EditText
+        android:id="@+id/findrecordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:ems="15"
+        android:background="@drawable/edittext_chat"
+        android:inputType="textMultiLine|textNoSuggestions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/findrecordbtn"
+        />
+
+    <Button
+        android:id="@+id/findrecordbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/cancel"
+        app:layout_constraintLeft_toRightOf="@id/findrecordtext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="13dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        style="?android:attr/borderlessButtonStyle"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/record_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/findrecordtext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/add"
+        style="?android:attr/borderlessButtonStyle"
+
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/findrecord"-->
+<!--        android:layout_width="50sp"-->
+<!--        android:layout_height="50sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:background="@drawable/search"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

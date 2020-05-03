@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="my_images"
+        path="Android/data/com.project1.heydoc/files/Pictures"/>
+
+<!--    external-path represents files in the root of the external storage area.
+The root path of this subdirectory is the same as the value returned by Environment
+getExternalStorageDirectory().-->
+
+
+</paths>

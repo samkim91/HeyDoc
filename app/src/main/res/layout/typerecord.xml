@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <TextView-->
+<!--        android:id="@+id/typerecord"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/typerecord"-->
+<!--        android:background="#ff2E9AFE"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject"
+        android:text="@string/subject"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/typesubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        app:layout_constraintLeft_toRightOf="@id/subject"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/seltype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seltype"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/typesubject"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/showspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="7"
+        android:enabled="false"
+        app:layout_constraintLeft_toRightOf="@id/seltype"
+        app:layout_constraintTop_toBottomOf="@id/typesubject"
+        android:textColor="@drawable/setdisabled_color"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/showspinner"
+        app:layout_constraintTop_toBottomOf="@id/typesubject"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/seltype"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/showdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        app:layout_constraintLeft_toRightOf="@id/date"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@drawable/setdisabled_color"
+        />
+
+    <Button
+        android:id="@+id/seldate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintLeft_toRightOf="@id/showdate"
+        android:background="@drawable/calender"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/month"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="3"-->
+<!--        android:maxLength="2"-->
+<!--        android:inputType="number"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/year"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/spinner"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/day"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="5"-->
+<!--        android:maxLength="2"-->
+<!--        android:inputType="number"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/month"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/spinner"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+        />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/typedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attach"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/typedetail"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/attachname"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="첨부파일 이름전시"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/typedetail"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/attach"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        />-->
+    <ImageView
+        android:id="@+id/addimage"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/attach"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/imagename"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/addimage"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/addimage"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:textSize="15sp"-->
+<!--        android:maxLength="10"-->
+<!--        />-->
+
+
+    <Button
+        android:id="@+id/findattach"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:layout_constraintTop_toBottomOf="@id/typedetail"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/search"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#BDBDBD"
+        android:text="@string/cancel"
+        android:textSize="20sp"
+        app:layout_constraintRight_toLeftOf="@id/confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ff2E9AFE"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cancel"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
