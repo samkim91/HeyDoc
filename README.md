@@ -1,6 +1,9 @@
 # HeyDoc
 The App which is treating your medical care.
 
+이건 내 첫번째 안드로이드 작품이다.
+만드는데 5주 가량 소요됐다.
+
 This is my first android APP project.
 It took about 5 weeks to the completion.
 
